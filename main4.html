@@ -35,6 +35,14 @@ function updateStrikes() {
 }
 </script>
 	
+<script>
+function checkStrikes() {
+    if (Number(localStorage.strikes) == 3) {
+	   window.location.replace("https://sammyammycia.github.io/DigitalSynthesisProj/strikeout.html"); 
+    }
+}
+</script>
+	
 <div class="center">
 	<p id="displayText" onload = "displayText();">  </p>
 	<h1>What Action will you take?</h1>
