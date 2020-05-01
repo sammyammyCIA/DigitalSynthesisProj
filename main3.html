@@ -8,6 +8,22 @@
 }
 </style>
 	
+<div class="center">
+	<p id="displayText" onload = "displayText();">  </p>
+	<h1>What Action will you take?</h1>
+<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main4.html" onclick = "setText('Swing and a miss.'); updateStrikes();">
+    	<input type="submit" value="Swing"/>
+</form>
+
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/win.html">
+    	<input type="submit" value="Swing Low" />
+</form>
+
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/wild_pitch.html" onclick = "setText('Wild Pitch. Game over.');">
+    	<input type="submit" value="Don't Swing" />
+</form>
+	</div>
 <script>
 function displayText() {
     if (localStorage.displayText) {
@@ -34,22 +50,5 @@ function updateStrikes() {
     }
 }
 </script>
-	
-<div class="center">
-	<p id="displayText" onload = "displayText();">  </p>
-	<h1>What Action will you take?</h1>
-<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main4.html" onclick = "setText('Swing and a miss.'); updateStrikes();">
-    	<input type="submit" value="Swing"/>
-</form>
-
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/win.html">
-    	<input type="submit" value="Swing Low" />
-</form>
-
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/wild_pitch.html" onclick = "setText('Wild Pitch. Game over.');">
-    	<input type="submit" value="Don't Swing" />
-</form>
-	</div>
 </html>
 
