@@ -9,17 +9,17 @@
 
 <script>
 function displayText() {
-    if (sessionStorage.displayText) {
-	    document.getElementById("displayText").innerHTML = sessionStorage.displayText;
+    if (localStorage.displayText) {
+	    document.getElementById("displayText").innerHTML = localStorage.displayText;
     } else {
-      sessionStorage.displayText = "";
+      localStorage.displayText = "TEST";
     }
 }
 </script>
 
 <script>
 function setText(var text) {
-    sessionStorage.displayText = text;
+    localStorage.displayText = text;
 }
 </script>
 
