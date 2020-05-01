@@ -8,36 +8,19 @@
 }
 </style>
 
+<div class="center">
+	<h1>What Action will you take?</h1>
+<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html">
+    	<input type="submit" value="Swing"/>
+</form>
 
-if(localStorage.strikes) {}
-else {
-	localStorage.strikes = 0;
-}
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/lose.html">
+    	<input type="submit" value="Swing Low" />
+</form>
 
-if(localStorage.balls) {}
-else {
-	localStorage.balls = 0;
-}
-
-if(localStorage.displayText) {}
-else {
-	localStorage.displayText = "";
-}
- 
-if(Number(localStorage.strikes) == 3) {
-	localStorage.displayText = "Strikeout - You Lose";
-}
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html" onclick = "localStorage.strikes = Number(localStorage.strikes) + 1">
-    		<input type="submit" value="Swing"/>
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/lose.html" onclick = "localStorage.displayText = 'Double Play - You Lose'">
-    		<input type="submit" value="Swing Low" />
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html" onclick = "localStorage.balls = Number(localStorage.balls) + 1">
-    		<input type="submit" value="Don't Swing" />
-	</form>
-
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html">
+    	<input type="submit" value="Don't Swing" />
+</form>
+	</div>
 </html>
