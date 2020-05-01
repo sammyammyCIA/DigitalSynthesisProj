@@ -3,15 +3,24 @@
 <style>
 .center {
   padding: 70px 0;
-  text-align = center;
+  text-align: center;
 }
+  
+  if(localStorage.strikes) {
+    localStoarge.strikes = Number(localStorage.strikes) + 1;
+  } else {
+    localStorage.strikes = 0; 
+  }
+  if(Number(localStorage.strikes) == 3) {
+    <!-- Send to a game over page--> 
+  }
 </style>
 <div class="center">
 <h1>Try to Reach Base Safely</h1>
-<body>You're batting with 1 Out and a man on second base.</body>
+<body>You're batting with 1 out and a man on second base.</body>
 
 <form action="link">
-    <input type="submit" value="Swing" />
+    <input type="submit" value="Swing"/>
 </form>
 
 <form action="link">
