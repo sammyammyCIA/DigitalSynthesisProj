@@ -8,6 +8,7 @@
 }
 </style>
 
+
 if(!localStorage.strikes) {
 	localStorage.strikes = 0;
 }
@@ -20,68 +21,20 @@ if(!localStorage.displayText) {
 	localStorage.displayText = "";
 }
  
-
-
-
-if(Number(localStorage.strikes) == 3)) {
+if(Number(localStorage.strikes) == 3) {
 	localStorage.displayText = "Strikeout - You Lose";
 }
 
-if(Number(localStorage.balls) == 0 && Number(localStorage.strikes) == 0) {
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.strikes = Number(localStorage.strikes) + 1">
+	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html" onclick = "localStorage.strikes = Number(localStorage.strikes) + 1">
     		<input type="submit" value="Swing"/>
 	</form>
 
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Double Play - You Lose'">
+	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/lose.html" onclick = "localStorage.displayText = 'Double Play - You Lose'">
     		<input type="submit" value="Swing Low" />
 	</form>
 
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.balls = Number(localStorage.balls) + 1">
+	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main2.html" onclick = "localStorage.balls = Number(localStorage.balls) + 1">
     		<input type="submit" value="Don't Swing" />
 	</form>
-}
-
-
-if((Number(localStorage.strikes) == 1 && Number(localStorage.balls) == 0) || (Number(localStorage.strikes) == 0 && Number(localStorage.balls) == 1)) {
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Pop-up out'">
-    		<input type="submit" value="Swing"/>
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.strikes = Number(localStorage.strikes) + 1">
-    		<input type="submit" value="Swing Low" />
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.balls = Number(localStorage.balls) + 1">
-    		<input type="submit" value="Don't Swing" />
-	</form>
-}
-
-if((Number(localStorage.strikes) == 2 && Number(localStorage.balls) == 0) || (Number(localStorage.strikes) == 1 && Number(localStorage.balls) == 1) || (Number(localStorage.strikes) == 0 && Number(localStorage.balls) == 2)) {
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.strikes = Number(localStorage.strikes) + 1">
-    		<input type="submit" value="Swing"/>
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Slider caught a lot of plate! HOMERUN WIN!'">
-    		<input type="submit" value="Swing Low" />
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Wild Pitch, tie game.'">
-    		<input type="submit" value="Don't Swing" />
-	</form>
-}
-
-if((Number(localStorage.balls) == 2 && Number(localStorage.strikes) == 1) || (Number(localStorage.balls) == 1 && Number(localStorage.strikes) == 2)) {
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Ground out. You lose.'">
-    		<input type="submit" value="Swing"/>
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Double. Tie game.'">
-    		<input type="submit" value="Swing Low" />
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/main.html" onclick = "localStorage.displayText = 'Hit by pitch. Take 1st base.'">
-    		<input type="submit" value="Don't Swing" />
-	</form>
-}
 
 </html>
