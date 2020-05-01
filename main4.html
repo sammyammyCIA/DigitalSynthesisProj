@@ -8,6 +8,24 @@
 }
 </style>
 	
+<div class="center">
+	<p onload = "checkStrikes();"> </p>
+	<p id="displayText" onload = "displayText();">  </p>
+	<h1>What Action will you take?</h1>
+<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/ground_out.html">
+    	<input type="submit" value="Swing"/>
+</form>
+
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/double.html">
+    	<input type="submit" value="Swing Low" />
+</form>
+
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/hit_by_pitch.html">
+    	<input type="submit" value="Don't Swing" />
+</form>
+	</div>
+	
 <script>
 function displayText() {
     if (localStorage.displayText) {
@@ -42,22 +60,4 @@ function checkStrikes() {
     }
 }
 </script>
-	
-<div class="center">
-	<p onload = "checkStrikes();"> </p>
-	<p id="displayText" onload = "displayText();">  </p>
-	<h1>What Action will you take?</h1>
-<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/ground_out.html">
-    	<input type="submit" value="Swing"/>
-</form>
-
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/double.html">
-    	<input type="submit" value="Swing Low" />
-</form>
-
-<form action="https://sammyammycia.github.io/DigitalSynthesisProj/hit_by_pitch.html">
-    	<input type="submit" value="Don't Swing" />
-</form>
-	</div>
 </html>
