@@ -7,18 +7,48 @@
   text-align: center;
 }
 </style>
+	
+<script>
+function displayText() {
+    if (localStorage.displayText) {
+	    document.getElementById("displayText").innerHTML = localStorage.displayText;
+    } else {
+      localStorage.displayText = "TEST";
+    }
+}
+</script>
+	
+<script>
+function setText(var text) {
+    localStorage.displayText = text;
+	displayText();
+}
+</script>
+	
+<script>
+function updateStrikes() {
+    if (localStorage.strikes) {
+	    localStorage.strikes = Number(localStorage.strikes) + 1;
+    } else {
+      localStorage.strikes = 0;
+    }
+}
+</script>
+	
+<div class="center">
+	<p id="displayText" onload = "displayText();">  </p>
+	<h1>What Action will you take?</h1>
+<img src="images/main_image.jpg" alt="Initial" height="600" width="777">
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/ground_out;">
+    	<input type="submit" value="Swing"/>
+</form>
 
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/lose.html" onclick = "localStorage.displayText = 'Ground out. You lose.'">
-    		<input type="submit" value="Swing"/>
-	</form>
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/double.html">
+    	<input type="submit" value="Swing Low" />
+</form>
 
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/lose.html" onclick = "localStorage.displayText = 'Double. Tie game.'">
-    		<input type="submit" value="Swing Low" />
-	</form>
-
-	<form action="https://sammyammycia.github.io/DigitalSynthesisProj/hit_by_pitch.html">
-    		<input type="submit" value="Don't Swing" />
-	</form>
-
-
+<form action="https://sammyammycia.github.io/DigitalSynthesisProj/hit_by_pitch">
+    	<input type="submit" value="Don't Swing" />
+</form>
+	</div>
 </html>
